@@ -25,8 +25,8 @@ public class TokenInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
         response.setContentType("application/json; charset=utf-8");
 
-        String url = request.getRequestURI().substring(request.getContextPath().length());
-        System.out.println(url);
+        String url = request.getRequestURI();
+        System.out.println("url:"+url);
         // 登录和注册等请求不需要令牌
         if (SAFE_URL_LIST.contains(url)) {
             return true;
