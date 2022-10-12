@@ -23,7 +23,7 @@ public class JwtUtil {
     /**
      * 令牌过期时间
      */
-    private static final Integer EXPIRE_SECONDS = 60 * 60 * 24 * 7;
+    private static final Integer EXPIRE_SECONDS = 60 * 60 ;//60 * 60 * 24 * 7
 
 
     /**

@@ -15,6 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 
 @Service
+
 public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> implements UserInfoService {
     @Override
     public Boolean register(UserInfo userInfo) {
